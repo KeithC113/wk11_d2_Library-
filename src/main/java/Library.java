@@ -8,7 +8,6 @@ public class Library {
 
     public Library() {
         this.book = new ArrayList<Book>();
-        this.stock = stock;
         this.capacity = 100;
     }
     public int getCapacity(){
@@ -23,7 +22,11 @@ public class Library {
         if(this.bookCount() < this.capacity){
             this.book.add(book);
         }
-
     }
+    public void removeBook (Book book) {
+        this.book.remove(book);
+    }
+
+
 
 }
